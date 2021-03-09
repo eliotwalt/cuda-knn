@@ -8,8 +8,10 @@ Start by installing the requirements in `requirements.txt`.
 To apply the model to a new dataset, first write some code to load your data in the `load_data` function in `utils.py`. Give a name to your dataset and wrap your code in a `if dataset == $dataset_name`. Then, the `eval.py` script allows to evaluate the model on fixed parameters and save a `PCA` and a `CudaKNN` model. CLI arguments:
 ```bash
 python eval.py -h
-usage: eval.py [-h] --dataset DATASET --test_size TEST_SIZE --val_size VAL_SIZE --batch_size BATCH_SIZE
-               [--flatten] [--cuda] --pca_components PCA_COMPONENTS --neighbors NEIGHBORS --p_norm P_NORM
+usage: eval.py [-h] --dataset DATASET --test_size TEST_SIZE 
+               --val_size VAL_SIZE --batch_size BATCH_SIZE
+               [--flatten] [--cuda] --pca_components PCA_COMPONENTS 
+               --neighbors NEIGHBORS --p_norm P_NORM
                [--verbose] [--output_dir OUTPUT_DIR]
 
 optional arguments:
