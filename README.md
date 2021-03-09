@@ -12,7 +12,7 @@ usage: eval.py [-h] --dataset DATASET --test_size TEST_SIZE
                --val_size VAL_SIZE --batch_size BATCH_SIZE
                [--flatten] [--cuda] --pca_components PCA_COMPONENTS 
                --neighbors NEIGHBORS --p_norm P_NORM
-               [--verbose] [--output_dir OUTPUT_DIR]
+               [--verbose] --output_dir OUTPUT_DIR
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -34,6 +34,7 @@ optional arguments:
                         norm parameter
   --verbose, -v         verbose activated if flag specified
   --output_dir OUTPUT_DIR, -o OUTPUT_DIR
+                        model output directory
 ```
 Example for mnist (11Gb of gpu memory):
 ```bash

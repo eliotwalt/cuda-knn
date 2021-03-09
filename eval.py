@@ -34,7 +34,8 @@ def get_args():
                         help='norm parameter')
     parser.add_argument('--verbose', '-v', action='store_true', required=False,
                         help='verbose activated if flag specified')
-    parser.add_argument('--output_dir', '-o', type=directory)
+    parser.add_argument('--output_dir', '-o', type=directory, required=True,
+                        help='model output directory')
 
     return parser.parse_args()
 
